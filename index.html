@@ -1,168 +1,166 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Kruthikkha Sekhar Portfolio</title>
 
-<style>
+<title>Kruthikkha Portfolio</title>
 
-body{
-font-family: Arial;
-margin:0;
-background:#f5f5f5;
-}
-
-nav{
-display:flex;
-justify-content:center;
-background:black;
-padding:15px;
-}
-
-nav a{
-color:white;
-margin:0 20px;
-text-decoration:none;
-font-size:18px;
-}
-
-section{
-padding:60px;
-}
-
-.profile{
-text-align:center;
-}
-
-.projects, .experience{
-display:flex;
-flex-direction:column;
-gap:20px;
-}
-
-.card{
-background:white;
-padding:20px;
-border-radius:10px;
-cursor:pointer;
-box-shadow:0 2px 8px rgba(0,0,0,0.1);
-}
-
-.contact input, .contact textarea{
-width:100%;
-padding:10px;
-margin:10px 0;
-}
-
-button{
-padding:10px 20px;
-background:black;
-color:white;
-border:none;
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
 <nav>
-<a href="#projects">Projects</a>
-<a href="#experience">Experience</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
+
+<h2 class="logo">Kruthikkha</h2>
+
+<ul>
+
+<li><a href="#projects">Projects</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
 </nav>
 
-<section class="profile">
 
-<h1>Kruthikkha Sekhar</h1>
+<section class="hero">
 
-<p>Software Engineer | AI Enthusiast | Full Stack Developer</p>
+<img src="profile.jpg" class="profile">
 
-<img src="profile.jpg" width="150">
+<h1>P C Kruthikkha</h1>
+
+<p class="tagline">
+Software Engineer • AEM Developer • Building scalable digital experiences
+</p>
 
 </section>
+
 
 <section id="projects">
 
-<h2>Projects</h2>
+<h2 class="section-title">Projects</h2>
 
-<div class="projects">
+<div class="project-grid">
 
-<div class="card" onclick="openProject('project1.html')">
-Project 1 - AI Resume Analyzer
+
+<div class="card" onclick="openModal('gl')">
+<h3>Gold Loan Calculator</h3>
+<p>Loan eligibility calculator using live gold rates</p>
 </div>
 
-<div class="card" onclick="openProject('project2.html')">
-Project 2 - E-commerce API
+
+<div class="card" onclick="openModal('live')">
+<h3>Live Commerce Platform</h3>
+<p>Live product streaming with real-time loan conversions</p>
+</div>
+
+
+<div class="card" onclick="openModal('vernacular')">
+<h3>Vernacular Platform</h3>
+<p>10K+ multilingual pages enabling regional experiences</p>
+</div>
+
+
+<div class="card" onclick="openModal('spdp')">
+<h3>GL SPDP Architecture</h3>
+<p>Scalable AEM architecture deployed across 1200+ URLs</p>
+</div>
+
+
+<div class="card" onclick="openModal('loans')">
+<h3>Loan Modules</h3>
+<p>LAP, LAS, Flexi Loans and CD modules</p>
+</div>
+
+
+<div class="card" onclick="openModal('performance')">
+<h3>Performance Optimization</h3>
+<p>Improved Core Web Vitals and fixed 40+ issues</p>
 </div>
 
 </div>
 
 </section>
+
+
 
 <section id="experience">
 
-<h2>Experience</h2>
+<h2 class="section-title">Experience</h2>
 
 <div class="experience">
 
-<div class="card" onclick="openProject('exp1.html')">
-Software Engineer - XYZ Company
-</div>
+<h3>Frontend / AEM Developer</h3>
 
-<div class="card" onclick="openProject('exp2.html')">
-Intern - ABC Tech
-</div>
+<p><b>Company:</b> Bajaj Finserv</p>
+
+<p>Bangalore, India • 2023-Present</p>
+
+<ul>
+
+<li>Built scalable AEM components for financial platforms</li>
+<li>Developed Gold Loan calculator with SSO integration</li>
+<li>Architected Live Commerce platform</li>
+<li>Delivered vernacular web pages across 10K+ URLs</li>
+<li>Resolved 40+ production bugs improving stability</li>
+
+</ul>
 
 </div>
 
 </section>
+
+
 
 <section id="about">
 
-<h2>About Me</h2>
+<h2 class="section-title">About</h2>
 
-<p>
-I am a Software Engineer passionate about building scalable web applications and exploring AI technologies.
-</p>
+<p class="about">
 
-<p>
-College: Manipal University  
-Degree: BTech in Information Technology
-</p>
+Software Engineer specializing in Adobe Experience Manager (AEM) and
+frontend development. Experienced in building scalable enterprise
+applications, optimizing performance, and delivering digital platforms
+used by millions of users.
 
-<p>
-Schooling: XYZ School
 </p>
 
 </section>
+
+
 
 <section id="contact">
 
-<h2>Contact</h2>
+<h2 class="section-title">Contact</h2>
 
-<div class="contact">
+<p>Email: kruthikkha@email.com</p>
 
-<input type="text" placeholder="Your Name">
-
-<input type="email" placeholder="Your Email">
-
-<textarea placeholder="Message"></textarea>
-
-<button>Send</button>
-
-</div>
+<p>GitHub: https://github.com/kruthikkha</p>
 
 </section>
 
-<script>
 
-function openProject(page){
-window.location.href = page;
-}
 
-</script>
+<!-- MODAL -->
+
+<div id="modal" class="modal">
+
+<div class="modal-content">
+
+<span class="close" onclick="closeModal()">✕</span>
+
+<div id="modal-body"></div>
+
+</div>
+
+</div>
+
+
+<script src="script.js"></script>
 
 </body>
+
 </html>
