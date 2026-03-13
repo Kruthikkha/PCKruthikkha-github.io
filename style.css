@@ -209,10 +209,12 @@ bottom:0;
 }
 
 .contact-icons{
+
 display:flex;
 justify-content:center;
-gap:50px;
+gap:40px;
 margin-top:40px;
+
 }
 
 .contact-item{
@@ -227,8 +229,11 @@ width:50px;
 transition:0.3s;
 }
 
-.contact-item:hover img{
+.contact-icons img:hover{
+
 transform:scale(1.2);
+filter:drop-shadow(0 0 10px #38bdf8);
+
 }
 
 .contact-item span{
@@ -254,4 +259,66 @@ transition:0.3s;
 .experience-card:hover{
 transform:translateY(-8px);
 box-shadow:0 0 20px #22c55e;
+}
+.modal{
+
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.8);
+align-items:center;
+justify-content:center;
+
+}
+
+.modal-box{
+
+background:#0f172a;
+padding:40px;
+border-radius:12px;
+width:500px;
+color:white;
+position:relative;
+box-shadow:0 0 40px #6366f1;
+
+}
+
+.close-btn{
+
+position:absolute;
+top:15px;
+right:20px;
+font-size:24px;
+cursor:pointer;
+
+}
+.project-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+padding:40px;
+
+}
+
+.project-card{
+
+background:linear-gradient(135deg,#3b82f6,#9333ea);
+padding:25px;
+border-radius:12px;
+text-align:center;
+font-weight:bold;
+cursor:pointer;
+transition:0.4s;
+
+}
+
+.project-card:hover{
+
+transform:translateY(-10px) scale(1.05);
+box-shadow:0 0 30px #9333ea;
+
 }
