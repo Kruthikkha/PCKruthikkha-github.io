@@ -207,3 +207,51 @@ transition:0.4s;
 .project-card:hover .project-info{
 bottom:0;
 }
+
+.contact-icons{
+display:flex;
+justify-content:center;
+gap:50px;
+margin-top:40px;
+}
+
+.contact-item{
+text-align:center;
+text-decoration:none;
+color:white;
+position:relative;
+}
+
+.contact-item img{
+width:50px;
+transition:0.3s;
+}
+
+.contact-item:hover img{
+transform:scale(1.2);
+}
+
+.contact-item span{
+display:block;
+opacity:0;
+margin-top:10px;
+transition:0.3s;
+}
+
+.contact-item:hover span{
+opacity:1;
+}
+
+.experience-card{
+max-width:800px;
+margin:30px auto;
+background:#1e293b;
+padding:25px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.experience-card:hover{
+transform:translateY(-8px);
+box-shadow:0 0 20px #22c55e;
+}
