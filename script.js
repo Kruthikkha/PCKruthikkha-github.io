@@ -1,9 +1,15 @@
 const modal = document.getElementById("modal")
 const modalBody = document.getElementById("modal-body")
 
-function openModal(project){
+const projects = document.querySelectorAll(".project-card")
 
-modal.style.display="block"
+projects.forEach(card => {
+
+card.addEventListener("mouseenter", () => {
+
+const project = card.getAttribute("data-project")
+
+modal.style.display = "flex"
 
 if(project==="gl"){
 
@@ -27,7 +33,7 @@ View Live Project
 
 }
 
-if(project==="live"){
+else if(project==="live"){
 
 modalBody.innerHTML=`
 
@@ -49,7 +55,7 @@ View Live Project
 
 }
 
-if(project==="vernacular"){
+else if(project==="vernacular"){
 
 modalBody.innerHTML=`
 
@@ -70,7 +76,7 @@ View Live Project
 
 }
 
-if(project==="spdp"){
+else if(project==="spdp"){
 
 modalBody.innerHTML=`
 
@@ -82,7 +88,7 @@ modalBody.innerHTML=`
 
 }
 
-if(project==="loans"){
+else if(project==="loans"){
 
 modalBody.innerHTML=`
 
@@ -100,7 +106,7 @@ modalBody.innerHTML=`
 
 }
 
-if(project==="performance"){
+else if(project==="performance"){
 
 modalBody.innerHTML=`
 
@@ -116,10 +122,10 @@ modalBody.innerHTML=`
 
 }
 
-}
+})
+
+})
 
 function closeModal(){
-
 modal.style.display="none"
-
 }
