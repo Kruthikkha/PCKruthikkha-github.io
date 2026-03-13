@@ -157,3 +157,23 @@ transition:transform 0.4s ease;
 .hero-image:hover{
 transform:scale(1.05);
 }
+
+.hero-image{
+animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-10px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
