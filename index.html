@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kruthikkha Sekhar Portfolio</title>
+
+<style>
+
+body{
+font-family: Arial;
+margin:0;
+background:#f5f5f5;
+}
+
+nav{
+display:flex;
+justify-content:center;
+background:black;
+padding:15px;
+}
+
+nav a{
+color:white;
+margin:0 20px;
+text-decoration:none;
+font-size:18px;
+}
+
+section{
+padding:60px;
+}
+
+.profile{
+text-align:center;
+}
+
+.projects, .experience{
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+cursor:pointer;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.contact input, .contact textarea{
+width:100%;
+padding:10px;
+margin:10px 0;
+}
+
+button{
+padding:10px 20px;
+background:black;
+color:white;
+border:none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+<a href="#projects">Projects</a>
+<a href="#experience">Experience</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section class="profile">
+
+<h1>Kruthikkha Sekhar</h1>
+
+<p>Software Engineer | AI Enthusiast | Full Stack Developer</p>
+
+<img src="profile.jpg" width="150">
+
+</section>
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="projects">
+
+<div class="card" onclick="openProject('project1.html')">
+Project 1 - AI Resume Analyzer
+</div>
+
+<div class="card" onclick="openProject('project2.html')">
+Project 2 - E-commerce API
+</div>
+
+</div>
+
+</section>
+
+<section id="experience">
+
+<h2>Experience</h2>
+
+<div class="experience">
+
+<div class="card" onclick="openProject('exp1.html')">
+Software Engineer - XYZ Company
+</div>
+
+<div class="card" onclick="openProject('exp2.html')">
+Intern - ABC Tech
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+I am a Software Engineer passionate about building scalable web applications and exploring AI technologies.
+</p>
+
+<p>
+College: Manipal University  
+Degree: BTech in Information Technology
+</p>
+
+<p>
+Schooling: XYZ School
+</p>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<div class="contact">
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Your Email">
+
+<textarea placeholder="Message"></textarea>
+
+<button>Send</button>
+
+</div>
+
+</section>
+
+<script>
+
+function openProject(page){
+window.location.href = page;
+}
+
+</script>
+
+</body>
+</html>
